@@ -11,8 +11,8 @@ class HolsterAnyGun implements IPostDBLoadMod {
         const logger = container.resolve<ILogger>("WinstonLogger");
         logger.logWithColor(`${this.modName} - Holster any gun enabled`, LogTextColor.CYAN)
 
-        const DB = container.resolve<DatabaseServer>("DatabaseServer").getTables();
-        const items = DB.templates.items;
+        const dataBaseTables = container.resolve<DatabaseServer>("DatabaseServer").getTables();
+        const items = dataBaseTables.templates.items;
 
         const inventory = items["55d7217a4bdc2d86028b456d"]
         const holster = inventory._props.Slots[2]
