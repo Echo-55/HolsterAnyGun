@@ -1,7 +1,7 @@
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { LogTextColor } from "@spt-aki/models/spt/logging/LogTextColor";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { DependencyContainer } from "tsyringe";
 
 class HolsterAnyGun implements IPostDBLoadMod {
